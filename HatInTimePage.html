@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Hat In Time</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+      #deets, #review, #images {
+        color: white;
+      }
+
+      #images .img-fluid:hover {
+        cursor: pointer;
+      }
+
+      a {
+        color: blue;
+      }
+
+      body {
+        background-color: #8c8c8c;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="mt-2 rounded container-fluid border border-dark" style="background: lightgray; text-align: center;">
+        <img class="img-fluid" src="images/logo.gif" alt="AHIT Logo" />
+        <h2>One word:
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#jollyModal">Jolly</button>
+        </h2>
+
+        <!-- A Jolly Modal -->
+        <div class="modal fade" id="jollyModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img class="img-fluid" src="images/jolly.gif" alt="Hat Kid Jumping">
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- End a Jolly Modal -->
+    </div>
+	
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img class="img-fluid" src="images/home.png" style="height: 25px; width: 25px"/></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bloodborne.html">Bloodborne</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ff7.html">FFVII</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="HatInTimePage.html">A Hat in Time</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Fallout.htm">Fallout 4</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="border border-dark container alert alert-secondary alert-dismissable fade show mt-2">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>Navigation:</strong> Click on any of the headings below for more information.
+    </div>
+    <div class="container border border-dark alert alert-secondary mt-2">
+      <strong>Music:</strong> Click on this button to open the music player.
+      <button class="float-right" data-toggle="collapse" data-target="#music">Music Controls</button>
+      <div id="music" class="collapse">
+        <audio controls id="introSong" src="hat.mp3"></audio>
+      </div>
+    </div>
+
+    <!-- Start a mini nav -->
+    <div class="container mt-2">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#deets">Game Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#images">Image Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#review">Game Review</a>
+        </li>
+      </ul>
+
+    <div class="tab-content bg-secondary mt-2 rounded">
+
+        <!-- Game Details tab -->
+        <div class="text-center tab-pane container fade" id="deets">
+          <div class="row pb-2 pt-2">
+            <div class="col-sm-4">
+              <h3>History</h3>
+              <div class="progress" style="height:5px">
+                <div class="progress-bar bg-dark" style="width:100%;height:5px;"></div>
+              </div>
+              <p class="text-justify">
+                <em>A Hat in Time</em> was developed by <strong><em>Gears for Breakfast</em></strong>.
+                This game is a 3D-Platformer which takes inspiration from the
+                <abbr class="initialism" title="Nintendo 64">N64</abbr> era.
+                With a funding goal of $30,000 on the crowd-funding site, Kickstarter,
+                the team successfully raised nearly 1000% of their projected needed funds
+                with donations totaling $296,360.  Initially released on October 5th, 2017
+                on the Steam platform, the team managed to sell 50,000 copies within the first two weeks of launch.
+                Two months later, the game released on PlayStation 4 and XBox One.
+                By the beginning of 2018, the team has sold over 150,000 copies.
+                With promises of more content to come, modders have been actively
+                adding content to the game as everyone patiently waits for the much anticipated
+                release of chapters 5 and 6.
+              </p>
+            </div>
+            <div class="col-sm-4 border border-top-0 border-bottom-0 border-dark">
+              <h3>Inspiration</h3>
+              <div class="progress" style="height:5px">
+                <div class="progress-bar bg-dark" style="width:100%;height:5px;"></div>
+              </div>
+              <p class="text-justify">
+                The game's director, Jonas Kaerlev, launched the project to answer
+                his feeling of an ongoing shortage of 3D-Platformers.  Taking inspiration from
+                games such as <em>Super Mario 64</em>, <em>Donkey Kong Country</em>,
+                and <em>Banjo-Kazooie</em> just to name a few, Kaerlev created the
+                sensation now known as <em>A Hat in Time</em>.  First starting
+                as a single developer, <strong><em>Gears for Breakfast</em></strong>
+                grew into a volunteer-based team spanning four different countries over the development
+                time.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Gameplay</h3>
+              <div class="progress" style="height:5px">
+                <div class="progress-bar bg-dark" style="width:100%;height:5px;"></div>
+              </div>
+              <p class="text-justify">
+                You play as Hat Kid, a space alien whose spaceship is orbiting a nearby
+                planet and is powered by hourglass-shaped objects called Time Pieces.
+                During her trip home, an odd intruder comes knocking on her door
+                and demands that she pays a toll fee for passing through Mafia Town.
+                <br />
+                Denying this ridiculous act of extortion, the intruder busts through
+                her spaceship, suddenly releasing all of her Time Pieces due
+                to the vacuum of space!  Hat Kid must now scour the planet in
+                search of all 40 of her Time Pieces to get home.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Game Details tab -->
+
+        <!-- Image Gallery tab -->
+        <div class="text-center tab-pane container fade active show" id="images">
+          <h1 class="text-center">Community Screenshots</h1>
+          <div class="progress" style="height:5px">
+            <div class="progress-bar bg-dark" style="width:100%;height:5px;"></div>
+          </div>
+          <div class="row pt-3 pb-3">
+            <div class="col-sm-4">
+              <img data-toggle="modal" data-target="#spoopsModal" class="img-thumbnail img-fluid" src="images/spoops.jpg" alt="Spooky Girl" />
+            </div>
+            <div class="col-sm-4">
+              <img data-toggle="modal" data-target="#forestModal" class="img-thumbnail img-fluid" src="images/Forest.png" alt="Story Girl" />
+            </div>
+            <div class="col-sm-4">
+              <img data-toggle="modal" data-target="#skyModal" class="img-thumbnail img-fluid" src="images/Alpine.png" alt="Sky Girl" />
+            </div>
+          </div>
+          <div class="row pt-2 pb-2">
+            <div class="col-sm-4">
+              <img data-toggle="modal" data-target="#trainModal" class="img-thumbnail img-fluid" src="images/Trainwreck.png" alt="Train Girl" />
+            </div>
+            <div class="col-sm-4">
+              <img data-toggle="modal" data-target="#movieModal" class="img-thumbnail img-fluid" src="images/Studio.png" alt="Movie Girl" />
+            </div>
+            <div class="col-sm-4">
+              <img data-toggle="modal" data-target="#smoochModal" class="img-thumbnail img-fluid" src="images/smooch.gif" alt="Smoochy Girl" />
+            </div>
+          </div>
+        </div>
+        <!-- End Image Gallery -->
+
+        <!-- start Game Review -->
+        <div class="pb-2 text-center tab-pane container fade" id="review">
+          <h1>A Hat in Time: A Marvelous Modern Blast from the Past</h1>
+          <h6>Reviewed by:  Aaron V.</h6>
+          <div class="progress" style="height:5px">
+            <div class="progress-bar bg-dark" style="width:100%;height:5px;"></div>
+          </div>
+          <p class="text-justify">
+            This game is spectacular. <em>A Hat in Time</em> is a 2013 Kickstarter indie
+            game that is an homage to all of the Nintendo 64 3D-Platformers. It
+            shares mechanics from <em>Mario</em>, <em>Banjo & Kazooie</em>, <em>DK64</em> and just about any
+            other 3D-Platformer you can think of. From the instant the game starts
+            up to the moment it ends, it's obvious that <strong><em>Gears for Breakfast</em></strong> has put
+            an absurd amount of love into this game. You play as Hat Kid, a mysterious
+            space traveler whose spaceship uses Time Pieces as fuel. The premise
+            of the game is that as Hat Kid was traveling through space trying to
+            return home, an intruder comes and accidentally releases all of her
+            Time Pieces. Now, she is stuck orbiting a planet until she retrieves
+            enough Time Pieces to make it back home. The story is ridiculous enough,
+            but the movement is what makes this game unique. The feeling of diving
+            around and jumping feels natural and everything is in your control.
+            Nothing ever feels forced, sluggish, or unfair. Each fall down to the
+            abyss is the player's fault and is easily corrected the next time by
+            adjusting the timing of a second jump or dive. This game constantly
+            leaves you with one of the most fluid movement controls.  The game plays wonderfully
+            because of this. The worlds themselves are quite a marvel.  Each chapter
+            is unique and has a set of objectives to do.  These objectives range from
+            exploring the entire level to find certain items to racing a member of
+            the Mafia on a rocket.  Each objective awards you with a Time Piece
+            and leaves you with a feeling of accomplishment whenever you finish an
+            objective.  With enough Time Pieces, you are able to access the final area
+            for a final confrontation with a certain character in the game.  In this level,
+            all of the skills you have harnessed until then are put to the test.
+            This final area is a gratifying experience as you power through
+            puzzle-like sections, conquering them with your newfound knowledge
+            of the game mechanics.  <em>A Hat in Time</em> definitely warrants
+            your time and attention.  Even if you've never grown up with games
+            from the N64 era, this is not a game you should bat an eye towards.
+          </p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded img-fluid" src="images/lavaTown.jpg" alt="Mafia Town in Lava" />
+            </div>
+            <div class="col-sm-4">
+              <img class="rounded img-fluid" src="images/sign.jpg" alt="Contract" />
+            </div>
+            <div class="col-sm-4">
+              <img class="rounded img-fluid" src="images/takeYou.jpg" alt="I'll take that!" />
+            </div>
+          </div>
+        </div>
+
+        <!-- end Game Review -->
+
+        <!-- Modal for the spooky girl image -->
+        <div class="modal fade" id="spoopsModal">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img class="img-fluid" src="images/spoops.jpg" alt="Hat Kid Jumping">
+              </div>
+
+              <div class="modal-footer">
+                <span>Hat Kid becomes a muddy alien to scare The Mafia!</span>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for the Snatcher Contract image -->
+        <div class="modal fade" id="forestModal">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img class="img-fluid" src="images/Forest.png" alt="Hat Kid Jumping">
+              </div>
+
+              <div class="modal-footer">
+                <span>Signing a contract with The Snatcher!</span>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for the Alpine Skies image -->
+        <div class="modal fade" id="skyModal">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img class="img-fluid" src="images/Alpine.png" alt="Hat Kid Jumping">
+              </div>
+
+              <div class="modal-footer">
+                <span>Explore the great peaks of the Alpine Skies!</span>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for the Trainwreck image -->
+        <div class="modal fade" id="trainModal">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img class="img-fluid" src="images/Trainwreck.png" alt="Hat Kid Jumping">
+              </div>
+
+              <div class="modal-footer">
+                <span>Hat Kid stars in The Conductor's Train Heist movie!</span>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for the Studio Girl image -->
+        <div class="modal fade" id="movieModal">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img class="img-fluid" src="images/Studio.png" alt="Hat Kid Jumping">
+              </div>
+
+              <div class="modal-footer">
+                <span>Hat Kid stars in her own movie!</span>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for the smooch gif -->
+        <div class="modal fade" id="smoochModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+
+              <div class="modal-body">
+                <img class="img-fluid" src="images/smooch.gif" alt="Hat Kid Jumping">
+              </div>
+
+              <div class="modal-footer">
+                <span>Smooch!</span>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+  <hr />
+  <small class="ml-2">Images were taken from the
+    <a href="https://store.steampowered.com">Steam</a>&reg; community page and the official
+    <a href="https://hatintime.com">A Hat In Time</a> website.  This website is for CSCI 446 at CSM.
+	No copyright infringement intended.
+  </small>
+    <script>
+      $(document).ready(function() {
+        var music = document.getElementById("introSong");
+        music.volume = 0.05;
+        $("#introSong").get(0).play();
+      });
+    </script>
+  </body>
+</html>
